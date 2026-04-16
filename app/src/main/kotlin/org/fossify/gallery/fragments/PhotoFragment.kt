@@ -509,7 +509,7 @@ class PhotoFragment : ViewPagerFragment() {
             .signature(mMedium.getKey())
             .format(DecodeFormat.PREFER_ARGB_8888)
             .priority(priority)
-            .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
+            .diskCacheStrategy(DiskCacheStrategy.NONE)
             .fitCenter()
             .run {
                 if (mCurrentRotationDegrees != 0) {
