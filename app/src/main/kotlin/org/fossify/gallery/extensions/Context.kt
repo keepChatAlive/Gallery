@@ -686,7 +686,7 @@ fun Context.loadImageBase(
         .signature(signature)
         .skipMemoryCache(skipMemoryCacheAtPaths?.contains(path) == true)
         .priority(Priority.LOW)
-        .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
+        .diskCacheStrategy(DiskCacheStrategy.NONE)
         .format(DecodeFormat.PREFER_ARGB_8888)
 
     if (cropThumbnails) {
